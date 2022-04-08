@@ -2,8 +2,23 @@ WidgetDoc_CN.md
 
 ### What is widget.
 
- Widget就是小组件，在安卓平台和早期的Windsphone平台已发布多年。苹果于WWDC2020中iOS14推出。
- Widget在iOS系统是使用swiftUI由Widgetkit实现的。WidgetKit整合了iOS14之前系统在负一屏的Notification Center framework，也叫Today widgets。
+During WWDC 2020, Apple announced the [widget] for iOS (as well as iPadOS and MacOS). With the new [WidgetKit]framework, 
+
+WidgetKit整合了iOS14之前系统在负一屏的Notification Center framework，也叫Today View. Widget are built entirely with SwiftUI. you can build widgets that can be added to your home screen to let you see important information at a glance. When they need more details, your widget takes them directly to the appropriate place in your app.
+
+ A great widget is glanceable, it's relevant and it's personalized. This is very important, widgets are not mini-apps. Your can have it in three different sizes, small, medium or large.
+  
+ If you have amost relevant information throughout the day you can add our widget to smart stacks. Smart Stacks are a collection of widgets that will automatically rotate to show the right widget at the top. So You can see the most important details at exactly the right time. But you can also swipe through. 
+ 
+
+ You configure the widget with a timeline provider,  The timeline provider tells WidgetKit when to update your widget’s content.
+
+ [image] (image://docs-assets.developer.apple.com/published/a3427848523d8674136d588fcfbf4954/12000/WidgetKit-Architecture@2x.png)
+
+ And you can add configuration and intelligence to Your widgets. 
+ To make a widget user-configurable, you add a custom SiriKit intent definition to your extension. WidgetKit automatically provides a customization interface to let users personalize their widgets.
+
+
 
 ### What widget can do.
 
