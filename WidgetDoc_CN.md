@@ -1,10 +1,12 @@
 WidgetDoc_CN.md
 
-### What is widget.
+### What is widget
 
-During WWDC 2020, Apple announced the [widget](https:www.baidu.com) for iOS (as well as iPadOS and MacOS), With the new [WidgetKit]framework.
+During WWDC 2020, Apple announced the [Widget](https://developer.apple.com/documentation/swiftui/widget/) for iOS (as well as iPadOS and MacOS), With the new [WidgetKit]framework.
 
-Widgetkit integrates the notification center framework, also known as today view, on the negative screen of the system before ios14. Widget are built entirely with SwiftUI. 
+Widgetkit integrates the notification center framework, also known as today view, on the negative screen of the system before ios14. 
+
+Widget are built entirely with [SwiftUI](https://developer.apple.com/documentation/swiftui/). 
 
 To implement a widget, you add a widget extension to your app. You configure the widget with a timeline provider, and use SwiftUI views to display the widget’s content. The timeline provider tells WidgetKit when to update your widget’s content.
 
@@ -24,13 +26,20 @@ If you have amost relevant information throughout the day you can add our widget
  And you can add configuration and intelligence to Your widgets. 
  To make a widget user-configurable, you add a custom SiriKit intent definition to your extension. WidgetKit automatically provides a customization interface to let users personalize their widgets.
 
-### What widget can do for our app.
+### What widget can do for our app
 
-We can show all the device info (name, icon, featrue etc) that had connected. After add or remove device in app. Our developer can send the devices data to widget  [WidgetCent]. And can not reload data evert. But the battery not need to show. becaust widget can not to establish connection with the device. and the ble device battery is showing by stystem batteries widget. 
+The widget extension is not continually active, even if the widget is onscreen. The widget data reload must be more than 5 minutes. You can show the device information (name, icon, featrue etc) that has connected to your project.
+ But the battery level not need to show. becaust widget can't to refresh data in time. and the ble device battery is showing by stystem batteries widget. 
 
-Because of widget show in iOS home screen, if not limlit widget. The will cast lost battery and user may pay more attion in it. So apple limlit widget. The widget extension is not continually active, even if the widget is onscreen. The widget data reload most be more than 5 minutes. and not available any animations. Widgets present read-only information and don’t support interactive elements such as scrolling elements or switches.
+The widget is not available any animations. Widgets present read-only information and don’t support interactive elements such as scrolling elements or switches. The widget no interaction
 
-![The main widget](pic/3.jpeg)
+You can making a Configurable Widget.
+ Users can select a specific device to show in  widget, But the widget ui style can't change.
+
+
+
+
+![The main widget](pic/3.png)
 
 ### Other
 The widget demo.
