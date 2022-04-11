@@ -1,5 +1,3 @@
-WidgetDoc_CN.md
-
 ### What is widget
 
 During WWDC 2020, Apple announced the [Widget](https://developer.apple.com/documentation/swiftui/widget/) for iOS (as well as iPadOS and MacOS), With the new [WidgetKit]framework.
@@ -10,7 +8,7 @@ Widget are built entirely with [SwiftUI](https://developer.apple.com/documentati
 
 To implement a widget, you add a widget extension to your app. You configure the widget with a timeline provider, and use SwiftUI views to display the widget’s content. The timeline provider tells WidgetKit when to update your widget’s content.
 
-![The main widget](pic/1.png)
+<div align=center><img src="pic/1.png" alt="The main widget" style="zoom:99%;" /></div>
 
 #### What is the feature
 
@@ -21,7 +19,7 @@ A great widget is glanceable, it's relevant and it's personalized. This is very 
 If you have amost relevant information throughout the day you can add our widget to smart stacks. Smart Stacks are a collection of widgets that will automatically rotate to show the right widget at the top. So You can see the most important details at exactly the right time. But you can also swipe through.
 
  You configure the widget with a timeline provider,  The timeline provider tells WidgetKit when to update your widget’s content.
-![The main widget](pic/2.png)
+<div align=center><img src="pic/2.png" alt="The main widget" style="zoom:67%;" /></div>
 
  And you can add configuration and intelligence to Your widgets. 
  To make a widget user-configurable, you add a custom SiriKit intent definition to your extension. WidgetKit automatically provides a customization interface to let users personalize their widgets.
@@ -36,10 +34,7 @@ The widget is not available any animations. Widgets present read-only informatio
 You can making a Configurable Widget.
  Users can select a specific device to show in  widget, But the widget ui style can't change.
 
-
-
-
-![The main widget](pic/3.png)
+<div align=center><img src="pic/3.png" alt="The main widget" style="zoom:90%;" /></div>
 
 ### Other
-The widget demo.
+The widget [Demo](https://github.com/Xiahaiquan/WidgetTest).
